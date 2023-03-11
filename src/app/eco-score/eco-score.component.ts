@@ -1,5 +1,9 @@
 import {Component, Input} from '@angular/core';
 
+export const EcoScores = ['A', 'B', 'C', 'D', 'E'] as const;
+export type EcoScore = typeof EcoScores[number];
+
+
 @Component({
   selector: 'app-eco-score',
   templateUrl: './eco-score.component.html',
@@ -7,6 +11,8 @@ import {Component, Input} from '@angular/core';
 })
 export class EcoScoreComponent {
   @Input()
-  activeScore?: string;
-  scores = ['a', 'b', 'c', 'd', 'e'];
+  activeScore?: EcoScore;
+  scores = [...EcoScores.values()];
+
+
 }

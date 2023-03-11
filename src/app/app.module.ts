@@ -1,16 +1,16 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { EcoScoreComponent } from './eco-score/eco-score.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { EcoScoreIconComponent } from './eco-score-icon/eco-score-icon.component';
+import {AppComponent} from './app.component';
+import {EcoScoreComponent} from './eco-score/eco-score.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {EcoScorePictoComponent} from './eco-score-picto/eco-score-picto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EcoScoreComponent,
-    EcoScoreIconComponent
+    EcoScorePictoComponent
   ],
   imports: [
     BrowserModule,
@@ -19,4 +19,5 @@ import { EcoScoreIconComponent } from './eco-score-icon/eco-score-icon.component
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

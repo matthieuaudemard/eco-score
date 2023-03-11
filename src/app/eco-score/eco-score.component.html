@@ -1,5 +1,5 @@
 <div class="score-wrapper">
   <ng-container *ngFor="let score of scores">
-    <div class="score score-{{score}} active" [ngClass]="{active: score === activeScore?.toLowerCase()}">{{score}}</div>
+    <div class="score score-{{score.toLowerCase()}} active" [ngClass]="{active: score === activeScore}">{{score}}</div>
   </ng-container>
 </div>
